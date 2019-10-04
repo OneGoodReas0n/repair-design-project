@@ -1,0 +1,25 @@
+{
+  "name": "repair-design-project",
+  "version": "1.0.0",
+  "description": "Test HTML project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneGoodReas0n/repair-design-project.git"
+  },
+  "author": "r345on",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OneGoodReas0n/repair-design-project/issues"
+  },
+  "homepage": "https://github.com/OneGoodReas0n/repair-design-project#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
