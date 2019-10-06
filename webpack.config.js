@@ -19,19 +19,29 @@ module.exports = {
                     options: {
                         presets: ['@babel/preset-env']
                     }
-                },
+                }
+            },
+            {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
                     {
-                        loader:"css-loader",
+                        loader: "css-loader",
                     },
                     {
-                        loader:"sass-loader",
+                        loader: "sass-loader",
                     }
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: ['file-loader'],
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [{ loader: 'url-loader?limit=100000' }]
             }
         ]
     },
