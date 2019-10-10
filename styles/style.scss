@@ -15,34 +15,6 @@ body {
 }
 
 nav {
-  @media screen and (max-width: 375px) {
-    text-transform: uppercase;
-    line-height: 15px;
-    display: flex;
-    justify-content: center;
-
-    .nav-wrapper {
-      width: 95%;
-      display: flex;
-      height: 56px;
-      justify-content: space-around;
-      align-items: center;
-      margin-right: 30px;
-
-      .nav-wrapper__logo {
-        margin-left: 0px;
-      }
-
-      .nav-wrapper__menu {
-        visibility: hidden;
-      }
-
-      .nav-wrapper__btn-request {
-        visibility: hidden;
-      }
-    }
-  }
-
   text-transform: uppercase;
   line-height: 15px;
   display: flex;
@@ -95,68 +67,6 @@ nav {
       padding: 11px 33px;
       border-radius: 2px;
       box-shadow: rgba(227, 184, 115, 0.2) 0px 5px 15px;
-    }
-  }
-}
-
-.intro {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  .intro__side-link {
-    transform: rotate(90deg);
-    width: fit-content;
-    position: absolute;
-    left: -41px;
-    cursor: pointer;
-
-    p {
-      display: inline;
-      color: #e3b873;
-      font-family: "Futura DemiC";
-      text-transform: uppercase;
-      line-height: 90px;
-    }
-
-    span {
-      display: inline-block;
-      position: relative;
-      top: -4px;
-      left: 12px;
-      width: 51px;
-      height: 2px;
-      background-color: #e3b873;
-    }
-  }
-
-  .intro__main-block {
-    width: 95%;
-    height: 710px;
-    background: url("../assets//images/main_photo.jpg");
-
-    &::after {
-      content: "";
-      display: block;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      background: rgba($color: #000000, $alpha: 0.7);
-    }
-
-    .intro__main-block__content {
-      width: 40%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      margin-left: 60px;
-
-      h1 {
-        font-family: "Yeseva One";
-        font-size: 40px;
-        text-transform: uppercase;
-      }
     }
   }
 }
