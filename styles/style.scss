@@ -10,10 +10,6 @@ body {
   background-color: #131313;
 }
 
-.yellow {
-  color: #e3b873;
-}
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -77,21 +73,21 @@ nav {
   justify-content: flex-end;
   width: 100%;
 
-  .intro__side-link {
+  .side-link {
     position: absolute;
     left: -41px;
     width: fit-content;
     transform: rotate(90deg);
     cursor: pointer;
 
-    p {
+    .side-link__insta {
       display: inline;
       font-family: "Futura DemiC";
       text-transform: uppercase;
       color: #e3b873;
     }
 
-    span {
+    .side-link__decor {
       position: relative;
       top: -4px;
       left: 12px;
@@ -102,7 +98,7 @@ nav {
     }
   }
 
-  .intro__main-block {
+  .main-block {
     display: flex;
     align-items: center;
     width: 95%;
@@ -111,12 +107,12 @@ nav {
       url("../assets//images/main_photo.jpg") no-repeat 50% 50%;
     background-size: cover;
 
-    .intro__main-block__content {
+    .content {
       width: 40%;
       margin-left: 60px;
       color: #ffffff;
 
-      h1 {
+      .content__heading {
         font-family: "Yeseva One";
         font-size: 40px;
         line-height: 1.4;
@@ -124,7 +120,11 @@ nav {
         text-transform: uppercase;
       }
 
-      p {
+      .content__heading_color_yellow {
+        color: #e3b873;
+      }
+
+      .content__text {
         width: 80%;
         margin-top: 34px;
         font-size: 22px;
@@ -135,11 +135,11 @@ nav {
       }
     }
 
-    .intro__main-block__content__buttons {
+    .buttons {
       width: 76%;
       margin-top: 54px;
 
-      .btn {
+      .buttons__btn {
         font-family: "Futura DemiC Italic";
         font-weight: 100;
         font-size: 13px;
@@ -149,14 +149,14 @@ nav {
         cursor: pointer;
       }
 
-      .calculate {
+      .buttons__btn_type_calculate {
         float: left;
         padding: 19px 42px;
         background-color: #e3b873;
         box-shadow: rgba(227, 184, 115, 0.2) 0px 5px 15px;
       }
 
-      .submit {
+      .buttons__btn_type_submit {
         float: right;
         padding: 18px 22px;
         border: 1px solid #ffffff;
@@ -176,7 +176,7 @@ nav {
   background-color: #131313;
   cursor: pointer;
 
-  p {
+  .scroll-block__text {
     float: left;
     font-family: "Yeseva One";
     font-size: 14px;
@@ -184,8 +184,95 @@ nav {
     text-transform: uppercase;
   }
 
-  img {
+  .scroll-block__arrow-icon {
     float: right;
     margin-left: 20px;
+  }
+}
+
+.complete-projects {
+  margin-left: 100px;
+  .side-wrapper {
+    width: 35%;
+
+    .title {
+      .title__text {
+        width: 40%;
+        font-family: "Yeseva One";
+        font-size: 27px;
+        color: #e3b873;
+        line-height: 1.38;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+      }
+      .title__decor {
+        position: relative;
+        top: -20px;
+        left: 170px;
+        display: block;
+        width: 92px;
+        height: 1px;
+        background-color: #e3b873;
+      }
+    }
+    .container {
+      .container__para {
+        width: 80%;
+        margin-top: 38px;
+        font-family: "Futura BookC";
+        font-size: 18px;
+        line-height: 1.58;
+        color: #ffffff;
+      }
+
+      .info-blocks {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        width: 70%;
+        .left-block {
+          .item {
+            width: 80%;
+            .item_title {
+              font-family: "Yeseva One";
+              font-size: 18px;
+              line-height: 1.38;
+              text-transform: uppercase;
+              color: #e3b873;
+            }
+            .item_text {
+              width: 80%;
+              margin-top: 12px;
+              font-family: "Futura BookC";
+              font-size: 15px;
+              line-height: 1.36;
+              color: #ffffff;
+            }
+          }
+        }
+        .right-block {
+          .item {
+            grid-area: right;
+            .item_title {
+              font-family: "Yeseva One";
+              font-size: 18px;
+              line-height: 1.38;
+              text-transform: uppercase;
+              color: #e3b873;
+            }
+            .item_text {
+              width: 80%;
+              margin-top: 12px;
+              font-family: "Futura BookC";
+              font-size: 15px;
+              line-height: 1.36;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-wrapper {
   }
 }

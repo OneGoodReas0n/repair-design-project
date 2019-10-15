@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>repair-design-project</title>
     <script src="./dist/bundle.js"></script>
     <link rel="stylesheet" href="./dist/style.css" />
   </head>
@@ -31,36 +31,79 @@
       </div>
     </nav>
     <div class="intro">
-      <div class="intro__side-link">
-        <p>Instagramm</p>
-        <span></span>
+      <div class="side-link">
+        <p class="side-link__insta">Instagramm</p>
+        <span class="side-link__decor"></span>
       </div>
-      <div class="intro__main-block">
-        <div class="intro__main-block__content">
-          <h1>
+      <div class="main-block">
+        <div class="content">
+          <h1 class="content__heading">
             Turnkey Repair in the city of
-            <span class="yellow">Rostov-on-Don</span>
+            <span class="content__heading_color_yellow">Rostov-on-Don</span>
           </h1>
-          <p>
+          <p class="content__text">
             Get ready-made turnkey repairs on time <br />
             with work time saving up to 45 days and 20% from cost of materials
             due to the organization of work
           </p>
-          <div class="intro__main-block__content__buttons">
-            <div class="btn calculate">calculate the cost</div>
-            <div class="btn submit">submit your application</div>
+          <div class="buttons">
+            <div class="buttons__btn buttons__btn_type_calculate">
+              calculate the cost
+            </div>
+            <div class="buttons__btn btn buttons__btn_type_submit">
+              submit your application
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="scroll-block">
-      <p>Scroll down</p>
+      <p class="scroll-block__text">Scroll down</p>
       <img
         src="./assets/images/scroll_arrow.svg"
         alt=""
         width="29"
         height="29"
+        class="scroll-block__arrow-icon"
       />
+    </div>
+    <div class="complete-projects">
+      <div class="side-wrapper">
+        <div class="title">
+          <p class="title__text">Completed projects</p>
+          <span class="title__decor"></span>
+        </div>
+        <div class="container">
+          <p class="container__para">
+            Only a small part of the work performed by our company is presented
+            on the site. For 14 years on in the construction market we have made
+            happy more than 1000 families
+          </p>
+          <div class="info-blocks">
+            <div class="left-block">
+              <div class="item">
+                <p class="item_title">City:</p>
+                <p class="item_text">Rostov-on-Don LCD admiral</p>
+              </div>
+              <div class="item">
+                <p class="item_title">Repair time:</p>
+                <p class="item_text">3.5 months</p>
+              </div>
+            </div>
+            <div class="right-block">
+              <div class="item">
+                <p class="item_title">apartment area:</p>
+                <p class="item_text">81 m2</p>
+              </div>
+              <div class="item">
+                <p class="item_title">Repair Cost:</p>
+                <p class="item_text">Upon request</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-wrapper"></div>
     </div>
   </body>
 </html>
