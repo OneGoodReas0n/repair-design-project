@@ -4,63 +4,179 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>repair-design-project</title>
     <script src="./dist/bundle.js"></script>
     <link rel="stylesheet" href="./dist/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper">
-        <div class="nav-wrapper__logo">
-          IC "repair design project"
+    <div class="container">
+      <div class="side-wrapper">
+        <div class="side-link">
+          <p class="side-link__insta">Instagramm</p>
+          <span class="side-link__decor"></span>
         </div>
-        <div class="nav-wrapper__menu">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Measurment</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Reviews</a></li>
-            <li><a href="">Contacts</a></li>
-          </ul>
-        </div>
-        <div class="nav-wrapper__phone">
-          <p>+7 (928) 768-32-39</p>
-        </div>
-        <div class="nav-wrapper__btn-request">Request a call</div>
       </div>
-    </nav>
-    <div class="intro">
-      <div class="intro__side-link">
-        <p>Instagramm</p>
-        <span></span>
-      </div>
-      <div class="intro__main-block">
-        <div class="intro__main-block__content">
-          <h1>
-            Turnkey Repair in the city of
-            <span class="yellow">Rostov-on-Don</span>
-          </h1>
-          <p>
-            Get ready-made turnkey repairs on time <br />
-            with work time saving up to 45 days and 20% from cost of materials
-            due to the organization of work
-          </p>
-          <div class="intro__main-block__content__buttons">
-            <div class="btn calculate">calculate the cost</div>
-            <div class="btn submit">submit your application</div>
+      <div class="main-wrapper">
+        <nav class="nav-wrapper">
+          <div class="nav-wrapper__logo">
+            IC "repair design project"
+          </div>
+          <div class="menu">
+            <ul class="menu-list">
+              <li class="list-item">
+                <a class="list-item__link list-item__link_active" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href="#">Projects</a>
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href="#">Measurment</a>
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href="#">Team</a>
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href="#">Reviews</a>
+              </li>
+              <li class="list-item">
+                <a class="list-item__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-wrapper__phone">
+            <p>+7 (928) 768-32-39</p>
+          </div>
+          <div class="nav-wrapper__btn-request">Request a call</div>
+        </nav>
+        <div class="intro">
+          <div class="main-block">
+            <div class="content">
+              <h1 class="content__heading">
+                Turnkey Repair in the city of
+                <span class="content__heading_color_yellow">Rostov-on-Don</span>
+              </h1>
+              <p class="content__text">
+                Get ready-made turnkey repairs on time <br />
+                with work time saving up to 45 days and 20% from cost of
+                materials due to the organization of work
+              </p>
+              <div class="buttons">
+                <div class="buttons__btn buttons__btn_type_calculate">
+                  calculate the cost
+                </div>
+                <div class="buttons__btn btn buttons__btn_type_submit">
+                  submit your application
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="scroll-block">
-      <p>Scroll down</p>
+      <p class="scroll-block__text">Scroll down</p>
       <img
-        src="./assets/images/scroll_arrow.svg"
+        src="./assets/images/intro/scroll_arrow.svg"
         alt=""
         width="29"
         height="29"
+        class="scroll-block__arrow-icon"
       />
+    </div>
+    <div class="complete-projects">
+      <div class="side-wrapper">
+        <div class="title">
+          <p class="title__text">Completed projects</p>
+          <span class="title__decor"></span>
+        </div>
+        <div class="content">
+          <p class="content__para">
+            Only a small part of the work performed by our company is presented
+            on the site. For 14 years on in the construction market we have made
+            happy more than 1000 families
+          </p>
+          <div class="info-blocks">
+            <div class="info-block">
+              <div class="item-left">
+                <p class="item-left__title">City:</p>
+                <p class="item-left__text">Rostov-on-Don LCD admiral</p>
+              </div>
+              <div class="item-right">
+                <p class="item-right__title">Apartment area:</p>
+                <p class="item-right__text">81 m2</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="item-left">
+                <p class="item-left__title">Repair time:</p>
+                <p class="item-left__text">3.5 months</p>
+              </div>
+              <div class="item-right">
+                <p class="item-right__title">Repair Cost:</p>
+                <p class="item-right__text">Upon request</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-controll">
+            <img
+              src="./assets/images/complete-projects/controll-arrow.svg"
+              alt="Left button"
+              class="slider-controll__controll-btn slider-controll__controll-btn_prev"
+              width="44"
+              height="13"
+            />
+            <span
+              class="slider-controll__item slider-controll__item_active"
+            ></span>
+            <span class="slider-controll__item"></span>
+            <span class="slider-controll__item"></span>
+            <img
+              src="./assets/images/complete-projects/controll-arrow.svg"
+              alt="Right button"
+              class="slider-controll__controll-btn slider-controll__controll-btn_next"
+              width="44"
+              height="13"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main-wrapper">
+        <div class="project-list">
+          <ul class="list">
+            <li class="list__item list__item_active">Rostov-on-Don, Admiral</li>
+            <li class="list__item ">Sochi Thieves</li>
+            <li class="list__item">Rostov-on-Don Patriotic</li>
+          </ul>
+        </div>
+        <div class="project-slider-block">
+          <div class="slider">
+            <div class="slider-controll">
+              <span
+                class="slider-controll__arrow slider-controll__arrow_left "
+              ></span>
+              <span
+                class="slider-controll__arrow slider-controll__arrow_right"
+              ></span>
+            </div>
+            <img
+              src="./assets/images/complete-projects/carousel_photo_1.jpg"
+              alt=""
+              width="679"
+              height="482"
+              class="slider__item"
+            />
+            <img
+              src="./assets/images/complete-projects/carousel_photo_2.jpg"
+              alt=""
+              width="679"
+              height="482"
+              class="slider__item"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
