@@ -18,7 +18,7 @@ a {
 }
 
 .custom-input:focus {
-  outline: tomato;
+  outline: transparent;
 }
 
 .background__theme_dark {
@@ -619,7 +619,6 @@ a {
 
   .list-of-types {
     width: 86%;
-    min-height: 1000px;
     margin: 30px auto 0 auto;
     .item-block {
       display: inline-block;
@@ -678,6 +677,53 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+.advantages-request-form-block {
+  margin-top: 145px;
+  .advantages {
+    position: relative;
+    .advantages__img {
+    }
+
+    .advantages__svg {
+      position: absolute;
+      top: 45px;
+      left: -115px;
+    }
+
+    .advantages__item-block {
+      display: flex;
+      .advantages__item-block__num-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #e3b873;
+
+        .advantages__item-block__num-wrapper__num {
+          font-family: "Yeseva One";
+          font-size: 18px;
+          line-height: 1.38;
+          color: #ffffff;
+        }
+      }
+
+      .advantages__item-block__text {
+      }
+    }
+
+    .advantages__item-block_first {
+    }
+    .advantages__item-block_second {
+    }
+    .advantages__item-block_third {
+    }
+    .advantages__item-block_fourth {
     }
   }
 }
