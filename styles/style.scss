@@ -431,7 +431,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
+      margin-top: 15px;
 
       .decoration-block__line {
         display: block;
@@ -602,7 +602,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
     .decor__line {
       display: block;
       width: 32px;
@@ -942,5 +942,112 @@ a {
       .row__item_fourth {
       }
     }
+  }
+}
+
+.design-projects-block {
+  margin-top: 150px;
+  height: 468px;
+  .container {
+    text-align: center;
+    .container__heading {
+      font-family: "Yeseva One";
+      font-size: 20px;
+      line-height: 1.38;
+      text-transform: uppercase;
+    }
+
+    .container__para {
+      margin-top: 20px;
+      font-family: "Futura BookC";
+      font-size: 20px;
+      color: #363636;
+      line-height: 1.36;
+    }
+
+    .decor {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      .decor__line {
+        display: inline-block;
+        width: 32px;
+        height: 1.5px;
+        background-color: #e3b873;
+      }
+
+      .decor__icon {
+        margin-right: 10px;
+      }
+
+      .decor__icon:last-of-type {
+        margin-left: 10px;
+      }
+    }
+    .projects-list {
+      display: flex;
+      justify-content: center;
+      width: 86%;
+      margin: 30px auto 0 auto;
+      .project-item {
+        width: fit-content;
+        margin-right: 30px;
+        text-align: start;
+        .project-item__img {
+          filter: brightness(0.8);
+        }
+
+        .content-block {
+          position: relative;
+          width: 90%;
+          margin: -130px auto 0 auto;
+          z-index: 1;
+          background-color: #ffffff;
+          box-shadow: rgba($color: #000000, $alpha: 0.03) 10px 10px 20px 0px;
+
+          .text-wrapper {
+            .text-group {
+              margin-left: 30px;
+              padding-top: 20px;
+              .project-type {
+                font-family: "Yeseva One";
+                font-size: 18px;
+                line-height: 1.39;
+                color: #363636;
+              }
+
+              .service-list {
+                margin-left: 15px;
+                .service-list__item {
+                  font-family: "Futura BookC";
+                  font-size: 15px;
+                  line-height: 1.7;
+                  color: #959595;
+                }
+              }
+            }
+          }
+          .project-item__btn {
+            position: relative;
+            top: 25px;
+            width: fit-content;
+            padding: 19px 68px;
+            border-radius: 0;
+          }
+        }
+      }
+
+      .project-item:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.background__theme_dark {
+  .steps-to-goal {
+    margin-top: -15px;
+    height: 500px;
   }
 }
