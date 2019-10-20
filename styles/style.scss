@@ -206,7 +206,6 @@ a {
     }
 
     .scroll-block__arrow-icon {
-      float: right;
       margin-left: 15px;
     }
   }
@@ -679,8 +678,6 @@ a {
 .advantages-request-form-block {
   margin-top: 145px;
   display: flex;
-  align-items: center;
-
   .advantages {
     width: 51%;
     position: relative;
@@ -747,93 +744,117 @@ a {
     display: flex;
     justify-content: center;
     width: 48%;
-    margin-top: 50px;
-    .form-block {
+    margin-top: 90px;
+    .container {
       width: 67%;
       margin: 0 auto;
-      padding-bottom: 25px;
-      text-align: center;
-      background-color: #131313;
+      .form-block {
+        padding-bottom: 25px;
+        text-align: center;
+        background-color: #131313;
 
-      .form-block__heading {
-        margin-top: 30px;
-        font-family: "Futura DemiC";
-        font-size: 20px;
-        font-weight: 100;
-        line-height: 1.23;
-        color: #ffffff;
+        .form-block__heading {
+          padding-top: 30px;
+          font-family: "Futura DemiC";
+          font-size: 20px;
+          font-weight: 100;
+          line-height: 1.23;
+          color: #ffffff;
+        }
+        .form {
+          width: 80%;
+          margin: 0 auto;
+          text-align: start;
+
+          .form-group {
+            margin-top: 45px;
+            .form-group__label {
+              display: block;
+              font-family: "Futura BookC";
+              font-size: 15px;
+              line-height: 1.36;
+              color: rgba($color: #ffffff, $alpha: 0.5);
+            }
+            .form-group__input {
+              width: 100%;
+              font-family: "Futura Medium";
+              font-size: 18px;
+              color: #ffffff;
+              line-height: 1.39;
+            }
+            .form-group__input::placeholder {
+              color: #ffffff;
+            }
+          }
+          .processing-data-block {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .processing-data-block__checkbox {
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              background-color: #e3b873;
+              border-radius: 1px;
+              cursor: pointer;
+            }
+
+            .processing-data-block__checkbox::after {
+              content: "";
+              position: relative;
+              display: block;
+              left: 7px;
+              top: 2px;
+              width: 3px;
+              height: 8px;
+              border: solid white;
+              border-width: 0 2px 2px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            .processing-data-block__text {
+              margin-left: 10px;
+              font-family: "Futura BookC";
+              font-size: 16px;
+              line-height: 1.36;
+              color: #ffffff;
+            }
+          }
+
+          .form__btn_submit {
+            width: fit-content;
+            margin-top: 30px;
+            margin-left: auto;
+            padding: 17px 33px;
+            font-size: 13px;
+            line-height: 1.4;
+            border-radius: 0;
+          }
+        }
       }
-      .form {
-        width: 80%;
-        margin: 0 auto;
-        text-align: start;
+      .promotion-block {
+        display: flex;
+        align-items: center;
+        margin: 40px 0 0 30px;
 
-        .form-group {
-          margin-top: 45px;
-          .form-group__label {
-            display: block;
-            font-family: "Futura BookC";
-            font-size: 15px;
-            line-height: 1.36;
-            color: rgba($color: #ffffff, $alpha: 0.5);
-          }
-          .form-group__input {
-            width: 100%;
-            font-family: "Futura Medium";
-            font-size: 18px;
-            color: #ffffff;
-            line-height: 1.39;
-          }
-          .form-group__input::placeholder {
-            color: #ffffff;
-          }
-        }
-        .processing-data-block {
+        .promotion-block__img {
           display: flex;
+          justify-content: center;
           align-items: center;
-          margin-top: 20px;
-
-          .processing-data-block__checkbox {
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            background-color: #e3b873;
-            border-radius: 1px;
-            cursor: pointer;
-          }
-
-          .processing-data-block__checkbox::after {
-            content: "";
-            position: relative;
-            display: block;
-            left: 7px;
-            top: 2px;
-            width: 3px;
-            height: 8px;
-            border: solid white;
-            border-width: 0 2px 2px 0;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-
-          .processing-data-block__text {
-            margin-left: 10px;
-            font-family: "Futura BookC";
-            font-size: 16px;
-            line-height: 1.36;
-            color: #ffffff;
-          }
+          width: 72px;
+          height: 72px;
+          background-color: #e3b873;
+          border-radius: 50%;
         }
-
-        .form__btn_submit {
-          width: fit-content;
-          float: right;
-          margin-top: 30px;
-          padding: 17px 33px;
-          font-size: 13px;
-          line-height: 1.4;
-          border-radius: 0;
+        .promotion-block__text {
+          margin-left: 20px;
+          font-size: 20px;
+          font-family: "Futura DemiC";
+          line-height: 1.23;
+          color: #e3b873;
         }
       }
     }
