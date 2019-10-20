@@ -22,6 +22,13 @@ a {
   color: #181818;
 }
 
+.description {
+  margin-top: 20px;
+  font-family: "Futura BookC";
+  font-size: 20px;
+  line-height: 1.36;
+}
+
 .custom-input {
   padding-bottom: 3px;
   border-top: none;
@@ -954,7 +961,7 @@ a {
       color: #181818;
     }
 
-    .container__para {
+    .container__description {
       margin-top: 20px;
       font-family: "Futura BookC";
       font-size: 20px;
@@ -1191,6 +1198,119 @@ a {
             }
           }
         }
+      }
+    }
+  }
+
+  .our-team-block {
+    height: 400px;
+    margin-top: 90px;
+    text-align: center;
+    .our-team-block__title {
+      color: #ffffff;
+    }
+
+    .decor {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+      .decor__line {
+        display: inline-block;
+        width: 32px;
+        height: 1.5px;
+        background-color: #e3b873;
+      }
+
+      .decor__icon {
+        margin-right: 10px;
+      }
+
+      .decor__icon:last-of-type {
+        margin-left: 10px;
+      }
+    }
+    .our-team-block__description {
+      color: #ffffff;
+    }
+
+    .team-list {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 65%;
+      margin: 0 auto;
+      .team-member {
+        .team-member__icon-block {
+          position: relative;
+          top: 35px;
+          left: -35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 70px;
+          background-color: #e3b873;
+          .icon {
+          }
+        }
+
+        .member-card {
+          .member-card__img {
+          }
+
+          .member-card__content {
+            position: relative;
+            top: -85px;
+            width: 84%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px 0px;
+            .member__name {
+              padding-top: 25px;
+              font-family: "Yeseva One";
+              font-size: 18px;
+              line-height: 1.39;
+              color: #181818;
+            }
+            .member__position {
+              font-family: "Futura BookC";
+              font-size: 15px;
+              line-height: 1.47;
+              color: #959595;
+            }
+            .member__work-experience {
+              margin-top: 20px;
+              padding: 12px 0px;
+              font-family: "Yeseva One";
+              font-size: 13px;
+              line-height: 1.5;
+              background-color: #e3b873;
+              color: #ffffff;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+
+    .more-info {
+      position: relative;
+      top: -45px;
+
+      .more-info__devider {
+        display: inline-block;
+        width: 55px;
+        height: 2px;
+        background-color: #e3b873;
+      }
+
+      .more-info__text {
+        margin-top: 15px;
+        font-family: "Futura BookC";
+        font-size: 20px;
+        line-height: 1.7;
+        color: #363636;
       }
     }
   }
