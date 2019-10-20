@@ -15,10 +15,23 @@ a {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid rgba($color: #363636, $alpha: 0.3);
+  background-color: transparent;
 }
 
 .custom-input:focus {
   outline: transparent;
+}
+
+.btn {
+  font-family: "Futura DemiC";
+  border-radius: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn_yellow {
+  background-color: #e3b873;
 }
 
 .background__theme_dark {
@@ -106,12 +119,8 @@ a {
 
         .nav-wrapper__btn-request {
           padding: 11px 33px;
-          border-radius: 2px;
           box-shadow: rgba(227, 184, 115, 0.2) 0px 5px 15px;
-          font-family: "Futura DemiC";
           font-size: 13px;
-          color: #fff;
-          background-color: #e3b873;
         }
       }
 
@@ -156,28 +165,19 @@ a {
           }
 
           .buttons {
+            display: flex;
+            justify-content: space-between;
             width: 76%;
             margin-top: 50px;
 
-            .buttons__btn {
-              font-family: "Futura DemiC Italic";
-              font-weight: 100;
-              font-size: 13px;
-              text-align: center;
-              text-transform: uppercase;
-              border-radius: 2px;
-              cursor: pointer;
-            }
-
             .buttons__btn_type_calculate {
-              float: left;
+              font-size: 13px;
               padding: 19px 42px;
-              background-color: #e3b873;
               box-shadow: rgba(227, 184, 115, 0.2) 0px 5px 15px;
             }
 
             .buttons__btn_type_submit {
-              float: right;
+              font-size: 13px;
               padding: 18px 22px;
               border: 1px solid #ffffff;
             }
@@ -526,17 +526,15 @@ a {
             line-height: 1.36;
             color: #363636;
           }
+          .form-group__input::placeholder {
+            color: #363636;
+          }
         }
-        .form__btn-submit {
+        .form__btn_submit {
           display: inline-block;
           padding: 18px 75px;
-          font-family: "Futura DemiC";
           font-size: 15px;
-          text-transform: uppercase;
-          background-color: #e3b873;
           color: #ffffff;
-          border-radius: 2px;
-          cursor: pointer;
         }
       }
     }
@@ -558,6 +556,7 @@ a {
         width: 18px;
         height: 18px;
         background-color: #e3b873;
+        border-radius: 1px;
         cursor: pointer;
       }
 
@@ -658,11 +657,7 @@ a {
           padding: 17px 33px;
           font-family: "Yeseva One";
           font-size: 18px;
-          font-weight: 100;
           line-height: 1.38;
-          text-transform: uppercase;
-          background-color: #e3b873;
-          color: #ffffff;
           box-shadow: rgba($color: #e3b873, $alpha: 0.3) 5px 5px 10px 0;
         }
 
@@ -683,7 +678,11 @@ a {
 
 .advantages-request-form-block {
   margin-top: 145px;
+  display: flex;
+  align-items: center;
+
   .advantages {
+    width: 51%;
     position: relative;
     .advantages__img {
     }
@@ -695,7 +694,10 @@ a {
     }
 
     .advantages__item-block {
+      position: absolute;
       display: flex;
+      align-items: center;
+
       .advantages__item-block__num-wrapper {
         display: flex;
         justify-content: center;
@@ -714,16 +716,126 @@ a {
       }
 
       .advantages__item-block__text {
+        margin-left: 20px;
+        font-family: "Futura Medium";
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 1.3;
+        color: #363636;
       }
     }
 
     .advantages__item-block_first {
+      top: 106px;
+      left: 318px;
     }
     .advantages__item-block_second {
+      top: 218px;
+      left: 394px;
     }
     .advantages__item-block_third {
+      top: 378px;
+      left: 418px;
     }
     .advantages__item-block_fourth {
+      top: 540px;
+      left: 348px;
+    }
+  }
+
+  .request-form-block {
+    display: flex;
+    justify-content: center;
+    width: 48%;
+    margin-top: 50px;
+    .form-block {
+      width: 67%;
+      margin: 0 auto;
+      padding-bottom: 25px;
+      text-align: center;
+      background-color: #131313;
+
+      .form-block__heading {
+        margin-top: 30px;
+        font-family: "Futura DemiC";
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 1.23;
+        color: #ffffff;
+      }
+      .form {
+        width: 80%;
+        margin: 0 auto;
+        text-align: start;
+
+        .form-group {
+          margin-top: 45px;
+          .form-group__label {
+            display: block;
+            font-family: "Futura BookC";
+            font-size: 15px;
+            line-height: 1.36;
+            color: rgba($color: #ffffff, $alpha: 0.5);
+          }
+          .form-group__input {
+            width: 100%;
+            font-family: "Futura Medium";
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 1.39;
+          }
+          .form-group__input::placeholder {
+            color: #ffffff;
+          }
+        }
+        .processing-data-block {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+
+          .processing-data-block__checkbox {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-color: #e3b873;
+            border-radius: 1px;
+            cursor: pointer;
+          }
+
+          .processing-data-block__checkbox::after {
+            content: "";
+            position: relative;
+            display: block;
+            left: 7px;
+            top: 2px;
+            width: 3px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+          .processing-data-block__text {
+            margin-left: 10px;
+            font-family: "Futura BookC";
+            font-size: 16px;
+            line-height: 1.36;
+            color: #ffffff;
+          }
+        }
+
+        .form__btn_submit {
+          width: fit-content;
+          float: right;
+          margin-top: 30px;
+          padding: 17px 33px;
+          font-size: 13px;
+          line-height: 1.4;
+          border-radius: 0;
+        }
+      }
     }
   }
 }
