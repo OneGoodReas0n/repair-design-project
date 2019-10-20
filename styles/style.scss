@@ -6,7 +6,20 @@ a {
   color: #fff;
 }
 
-.background {
+.heading {
+  font-family: "Yeseva One";
+  font-size: 27px;
+  line-height: 1.39;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.title {
+  font-family: "Yeseva One";
+  font-size: 20px;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: #181818;
 }
 
 .custom-input {
@@ -419,11 +432,7 @@ a {
 
   .online-controll-block {
     text-align: center;
-    .online-controll-block__heading {
-      font-family: "Yeseva One";
-      font-size: 20px;
-      line-height: 1.38;
-      text-transform: uppercase;
+    .online-controll-block__title {
       color: #ffffff;
     }
 
@@ -590,12 +599,8 @@ a {
   margin-top: 140px;
   text-align: center;
 
-  .types-of-repair-block__heading {
-    font-family: "Yeseva One";
-    font-size: 20px;
-    line-height: 1.38;
+  .types-of-repair-block__title {
     color: #181818;
-    text-transform: uppercase;
   }
 
   .decor {
@@ -657,6 +662,7 @@ a {
           font-family: "Yeseva One";
           font-size: 18px;
           line-height: 1.38;
+          border-radius: 0;
           box-shadow: rgba($color: #e3b873, $alpha: 0.3) 5px 5px 10px 0;
         }
 
@@ -681,8 +687,6 @@ a {
   .advantages {
     width: 51%;
     position: relative;
-    .advantages__img {
-    }
 
     .advantages__svg {
       position: absolute;
@@ -937,10 +941,6 @@ a {
       .row__item_second {
         margin-top: -113px;
       }
-      .row__item_third {
-      }
-      .row__item_fourth {
-      }
     }
   }
 }
@@ -950,11 +950,8 @@ a {
   height: 468px;
   .container {
     text-align: center;
-    .container__heading {
-      font-family: "Yeseva One";
-      font-size: 20px;
-      line-height: 1.38;
-      text-transform: uppercase;
+    .container__title {
+      color: #181818;
     }
 
     .container__para {
@@ -1032,7 +1029,8 @@ a {
             position: relative;
             top: 25px;
             width: fit-content;
-            padding: 19px 68px;
+            padding: 19px 106px 19px 28px;
+            font-family: "Yeseva One";
             border-radius: 0;
           }
         }
@@ -1048,6 +1046,152 @@ a {
 .background__theme_dark {
   .steps-to-goal {
     margin-top: -15px;
-    height: 500px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 87%;
+      padding-top: 400px;
+      margin: 0 auto;
+      .left-side-wrapper {
+        width: 25%;
+        .intro {
+          .intro__how {
+            font-family: "Futura DemiC";
+            font-size: 15px;
+            text-transform: uppercase;
+            line-height: 1.4;
+            color: #ffffff;
+          }
+          .text-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .text-block__line {
+              margin-top: 30px;
+              width: 92px;
+              height: 1px;
+              background-color: #e3b873;
+            }
+          }
+        }
+        .content {
+          margin-top: 90px;
+          .content__item-step {
+            font-family: "Yeseva One";
+            font-size: 18px;
+            line-height: 1.39;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+
+          .content__item-title {
+            margin-top: 30px;
+            font-family: "Yeseva One";
+            font-size: 15px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            color: #e3b873;
+          }
+
+          .content__item-text {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-family: "Futura BookC";
+            font-size: 15px;
+            line-height: 2;
+            color: #ffffff;
+          }
+        }
+        .slider-controll {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 86%;
+          margin-top: 100px;
+          .slider-controll__controll-btn {
+            cursor: pointer;
+          }
+
+          .slider-controll__controll-btn_prev {
+            margin-right: 7px;
+          }
+
+          .slider-controll__controll-btn_next {
+            margin-left: 7px;
+            transform: rotate(180deg);
+          }
+
+          .slider-controll__item {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
+            cursor: pointer;
+          }
+
+          .slider-controll__item:last-of-type {
+            margin-right: 0;
+          }
+
+          .slider-controll__item_active {
+            background-color: #ffffff;
+          }
+        }
+      }
+
+      .right-side-wrapper {
+        width: 60%;
+        .steps-list {
+          margin-top: 90px;
+          .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 55px;
+
+            .step-item {
+              width: 16%;
+              .step-item__num {
+                display: inline-block;
+                font-family: "Yeseva One";
+                font-size: 15px;
+                line-height: 1.39;
+                color: rgba($color: #ffffff, $alpha: 0.3);
+              }
+
+              .step-item__num_active {
+                color: #ffffff;
+              }
+
+              .step-item__num::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: rgba($color: #e3b873, $alpha: 0.3);
+              }
+
+              .step-item__num_active::after {
+                background-color: #e3b873;
+              }
+
+              .step-item__text {
+                margin-top: 10px;
+                font-family: "Futura BookC";
+                font-size: 15px;
+                line-height: 1.2;
+                color: rgba($color: #ffffff, $alpha: 0.3);
+              }
+
+              .step-item__text_active {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
