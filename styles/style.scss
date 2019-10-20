@@ -860,3 +860,87 @@ a {
     }
   }
 }
+
+.fantasies-block {
+  display: flex;
+  width: 100%;
+  height: 864px;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../assets/images/release-fantasies/fantasies_main_photo.jpg);
+  background-size: cover;
+  margin-top: 240px;
+
+  .left-side-wrapper {
+    width: 40%;
+    .content {
+      width: 60%;
+      margin-left: 100px;
+      padding-top: 138px;
+      .content__heading {
+        font-family: "Yeseva One";
+        font-size: 27px;
+        color: #e3b873;
+        text-transform: uppercase;
+        line-height: 1.39;
+      }
+
+      .style-list {
+        list-style: none;
+        .style-list__item {
+          width: fit-content;
+          margin-top: 25px;
+          font-family: "Proxima Nova Light";
+          font-weight: 100;
+          color: #ffffff;
+          letter-spacing: 0.5px;
+        }
+
+        .style-list__item:first-of-type {
+          margin-top: 45px;
+        }
+
+        .style-list__item_selected {
+          color: #e3b873;
+        }
+
+        .style-list__item_selected::after {
+          content: "";
+          margin-top: 4px;
+          display: block;
+          width: 100%;
+          height: 0.5px;
+          background-color: #e3b873;
+        }
+      }
+    }
+  }
+
+  .album {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+
+    .row {
+      width: fit-content;
+
+      .row__item {
+        margin-bottom: 35px;
+      }
+
+      .row__item_first {
+        margin-top: -41px;
+      }
+      .row__item_second {
+        margin-top: -113px;
+      }
+      .row__item_third {
+      }
+      .row__item_fourth {
+      }
+    }
+  }
+}
