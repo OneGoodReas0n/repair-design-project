@@ -1,6 +1,15 @@
 @import "./mixins.scss";
 
 @include sm {
+  .custom-input {
+    padding-bottom: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid rgba($color: #ffffff, $alpha: 1);
+    background-color: transparent;
+  }
+
   .background__theme_dark {
     width: 100%;
     background-color: #131313;
@@ -123,6 +132,7 @@
       display: block;
       justify-content: start;
       margin: 0 auto;
+      padding-bottom: 65px;
       .side-wrapper {
         width: 100%;
         margin-top: 35px;
@@ -220,7 +230,6 @@
         height: fit-content;
         width: 90%;
         margin: 0 auto;
-        padding-bottom: 20px;
         .info-block {
           display: flex;
           justify-content: space-between;
@@ -271,9 +280,10 @@
   }
 
   .controll-light-form-block {
-    display: none;
+    display: block;
     width: 100%;
-    margin-top: -310px;
+    margin: -1px auto 0 auto;
+    background-color: #131313;
 
     .online-controll-block {
       text-align: center;
@@ -304,12 +314,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 49%;
-      height: 434px;
-      margin: 20px auto 0 auto;
+      width: 90%;
+      height: 207px;
+      margin: 40px auto 0 auto;
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url(../assets/images/control-form/video.jpg);
-      box-shadow: rgba($color: #000000, $alpha: 0.15) 0px 20px 50px 0px;
+      background-size: cover;
+      box-shadow: none;
 
       .video-controll-area {
         width: 85px;
@@ -335,7 +346,7 @@
 
     .content {
       width: 100%;
-      margin-top: 60px;
+      margin-top: 28px;
       .content__decor {
         display: block;
         width: 55px;
@@ -345,57 +356,70 @@
       }
 
       .content__text {
-        width: 43%;
+        width: 90%;
         margin: 0 auto;
-        margin-top: 36px;
+        margin-top: 20px;
         font-family: "Futura BookC";
-        font-size: 20px;
+        font-size: 14px;
         line-height: 1.7;
+        color: #ffffff;
       }
     }
     .light-form-block {
-      width: 53%;
-      margin: 90px auto 0 auto;
+      width: 90%;
+      margin: 30px auto 0 auto;
       .form {
+        display: none;
+      }
+      .form_mobile {
+        display: block;
         .form-line {
-          display: flex;
+          display: block;
           align-items: flex-start;
           .form-group {
-            display: inline-block;
+            display: block;
+            &:first-of-type {
+              .form-group__input {
+                margin-bottom: 60px;
+              }
+            }
             .form-group__label {
               display: block;
               font-family: "Futura BookC";
               font-size: 15px;
               line-height: 1.36;
               text-align: start;
-              color: rgba($color: #363636, $alpha: 0.5);
+              color: rgba($color: #ffffff, $alpha: 0.5);
             }
 
             .form-group__input {
-              width: 230px;
-              margin-right: 60px;
+              width: 100%;
               font-family: "Futura BookC";
               font-size: 18px;
               line-height: 1.36;
-              color: #363636;
+              color: #ffffff;
             }
             .form-group__input::placeholder {
-              color: #363636;
+              color: #ffffff;
             }
           }
-          .form__btn_submit {
-            display: inline-block;
-            padding: 18px 75px;
-            font-size: 15px;
-            color: #ffffff;
-          }
         }
+      }
+      .form__btn_submit {
+        position: relative;
+        top: 25px;
+        display: block;
+        padding: 18px 75px;
+        font-size: 15px;
+        color: #ffffff;
+        border-radius: 0;
       }
       .form-personal-data-block {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         margin-top: 32px;
+        padding-bottom: 35px;
 
         input[type="checkbox"] {
           opacity: 0;
@@ -430,11 +454,11 @@
 
         .form-personal-data-block__desc {
           display: inline-block;
-          margin-left: 5px;
+          margin-left: 10px;
           font-family: "Futura BookC";
           font-size: 16px;
           line-height: 1.36;
-          color: #181818;
+          color: #ffffff;
         }
       }
     }
