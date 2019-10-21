@@ -1455,6 +1455,7 @@ a {
 .question-form-block {
   position: relative;
   top: -215px;
+  z-index: 1;
   width: 56%;
   margin: 0 auto;
   background-color: #181818;
@@ -1563,6 +1564,131 @@ a {
         margin: 50px auto 0 auto;
         padding: 17px 73px;
         border-radius: 0;
+      }
+    }
+  }
+}
+
+.contact-info-block {
+  position: relative;
+  z-index: 0;
+  margin-top: -400px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(#181818, 1), rgba(#181818, 0.8)),
+    url(../assets/images/contact-info/contact-info_bg.jpg) 0% 100% no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  .contact-info {
+    padding-top: 250px;
+    padding-bottom: 70px;
+
+    .contact-info__adress {
+      font-family: "Yeseva One";
+      font-size: 20px;
+      line-height: 1.39;
+      color: #e3b873;
+      text-transform: uppercase;
+    }
+
+    .contact-info__social {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      .social-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        width: 28px;
+        height: 28px;
+        margin-right: 15px;
+        border-radius: 50%;
+        background-color: #e3b873;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        .social-item__mail {
+        }
+
+        .social-item__insta {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+
+    .contact-info__map {
+      margin-top: 40px;
+    }
+  }
+}
+
+.footer {
+  background-color: #181818;
+  .container {
+    display: flex;
+    .side-wrapper {
+      width: 6%;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-wrapper {
+      width: 94%;
+
+      .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 82px;
+        margin-right: 100px;
+        text-transform: uppercase;
+        line-height: 15px;
+
+        .nav-wrapper__logo {
+          font-family: "Futura DemiC";
+          color: #e3b873;
+        }
+
+        .menu {
+          font-family: "Futura BookC";
+          color: #fff;
+
+          .menu-list {
+            .list-item {
+              display: inline-block;
+              margin-left: 44px;
+            }
+
+            .list-item:last-of-type {
+              margin-right: 30px;
+            }
+
+            .list-item__link {
+              font-weight: 100;
+            }
+
+            .list-item__link_active {
+              color: #e3b873;
+            }
+          }
+        }
+
+        .nav-wrapper__phone {
+          p {
+            color: #e3b873;
+            text-decoration: underline;
+            font-family: "Futura DemiC";
+          }
+        }
+
+        .nav-wrapper__btn-request {
+          padding: 11px 33px;
+          box-shadow: rgba(227, 184, 115, 0.2) 0px 5px 15px;
+          font-size: 13px;
+        }
       }
     }
   }
