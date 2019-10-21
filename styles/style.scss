@@ -1315,3 +1315,121 @@ a {
     }
   }
 }
+
+.our-clients-block {
+  margin-top: 520px;
+  text-align: center;
+
+  .our-clients-block__title {
+    color: #181818;
+  }
+
+  .decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    .decor__line {
+      display: inline-block;
+      width: 32px;
+      height: 1.5px;
+      background-color: #e3b873;
+    }
+
+    .decor__icon {
+      margin-right: 10px;
+    }
+
+    .decor__icon:last-of-type {
+      margin-left: 10px;
+    }
+  }
+
+  .our-clients-block__description {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin: 70px auto 0 auto;
+
+    .client-wrapper {
+      width: 30%;
+      box-shadow: rgba($color: #000000, $alpha: 0.04) 0 10px 50px 0;
+      .client-card {
+        width: 80%;
+        margin: 0 auto;
+        text-align: start;
+        padding-bottom: 35px;
+        .client-card__img-name {
+          display: flex;
+          align-items: center;
+          padding-top: 20px;
+          .img {
+            border-radius: 50%;
+          }
+          .name {
+            margin-left: 20px;
+            font-family: "Yeseva One";
+            font-size: 18px;
+            line-height: 1.27;
+            color: #181818;
+          }
+        }
+
+        .client-card__message {
+          margin-top: 20px;
+          margin-bottom: 5px;
+          font-family: "Futura BookC";
+          font-size: 15px;
+          line-height: 1.8;
+          color: #959595;
+        }
+
+        .client-card__message:last-of-type {
+          margin-top: 0;
+        }
+      }
+      .details {
+        position: relative;
+        top: 25px;
+        display: flex;
+        background-color: #e3b873;
+        justify-content: start;
+        align-items: center;
+        width: fit-content;
+
+        .details__item {
+          padding: 11px 15px;
+        }
+
+        .details__item:last-of-type {
+          padding: 11px 15px 11px 0;
+          margin-left: -10px;
+        }
+
+        .details__text {
+          font-family: "Yeseva One";
+          font-size: 17px;
+          line-height: 1.39;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+
+        .details__text:last-of-type {
+          padding-right: 20px;
+        }
+
+        .details__devider {
+          width: 54px;
+          height: 0.5px;
+          transform: rotate(90deg);
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
