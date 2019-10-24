@@ -1,64 +1,4 @@
-@import "./reset.scss";
-@import "./fonts.scss";
-@import "./mixins.scss";
-
-body,
-html {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.heading {
-  font-family: "Yeseva One";
-  font-size: 27px;
-  line-height: 1.39;
-  text-transform: uppercase;
-  color: #e3b873;
-}
-
-.title {
-  font-family: "Yeseva One";
-  font-size: 20px;
-  line-height: 1.38;
-  text-transform: uppercase;
-  color: #181818;
-}
-
-.description {
-  margin-top: 20px;
-  font-family: "Futura BookC";
-  font-size: 20px;
-  line-height: 1.36;
-}
-
-.custom-input {
-  padding-bottom: 3px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid rgba($color: #363636, $alpha: 0.3);
-  background-color: transparent;
-}
-
-.custom-input:focus {
-  outline: transparent;
-}
-
-.btn {
-  font-family: "Futura DemiC";
-  border-radius: 2px;
-  color: #ffffff;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.btn_yellow {
-  background-color: #e3b873;
-}
+@import "../mixins.scss";
 
 .background__theme_dark {
   background-color: #131313;
@@ -163,7 +103,7 @@ a {
             url("../assets/images/intro/main_photo.jpg") no-repeat 0% 80%;
           background-size: cover;
           .content {
-            width: 40%;
+            width: 43%;
             margin-left: 70px;
             color: #ffffff;
 
@@ -218,7 +158,7 @@ a {
     top: -50px;
     display: flex;
     align-items: center;
-    width: 17%;
+    width: 18%;
     padding: 35px 50px;
     box-sizing: border-box;
     background-color: #131313;
@@ -517,7 +457,7 @@ a {
     }
 
     .content__text {
-      width: 43%;
+      width: 45%;
       margin: 0 auto;
       margin-top: 36px;
       font-family: "Futura BookC";
@@ -867,7 +807,7 @@ a {
         align-items: center;
         margin: 40px 0 0 30px;
 
-        .promotion-block__icon {
+        .promotion-block__img {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -952,17 +892,16 @@ a {
     justify-content: start;
 
     .row {
-      width: 100%;
-      height: fit-content;
+      width: fit-content;
 
-      .row__img {
+      .row__item {
         margin-bottom: 35px;
       }
 
-      .row__img_odd:first-of-type {
+      .row__item_first {
         margin-top: -41px;
       }
-      .row__img_even:first-of-type {
+      .row__item_second {
         margin-top: -113px;
       }
     }
@@ -1020,7 +959,6 @@ a {
         margin-right: 30px;
         text-align: start;
         .project-item__img {
-          width: 100%;
           filter: brightness(0.8);
         }
 
@@ -1220,13 +1158,6 @@ a {
             }
           }
         }
-        .step-img-block {
-          width: 100%;
-          .step-img-block__img {
-            width: 100%;
-            height: fit-content;
-          }
-        }
       }
     }
   }
@@ -1267,7 +1198,7 @@ a {
       position: relative;
       display: flex;
       justify-content: space-between;
-      width: 65%;
+      width: 70%;
       margin: 0 auto;
       .team-member {
         .team-member__icon-block {
@@ -1286,7 +1217,6 @@ a {
 
         .member-card {
           .member-card__img {
-            width: 100%;
           }
 
           .member-card__content {
@@ -1394,11 +1324,11 @@ a {
         margin: 0 auto;
         text-align: start;
         padding-bottom: 35px;
-        .client-card__avatar-name {
+        .client-card__img-name {
           display: flex;
           align-items: center;
           padding-top: 20px;
-          .avatar {
+          .img {
             border-radius: 50%;
           }
           .name {
@@ -1733,7 +1663,3 @@ a {
     }
   }
 }
-
-@import "./media/sm.scss";
-@import "./media/lg.scss";
-@import "./media/xl.scss";
