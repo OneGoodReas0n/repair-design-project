@@ -676,6 +676,8 @@ a {
         }
 
         .item__btn {
+          position: relative;
+          top: 19px;
           display: block;
           width: fit-content;
           margin-top: 40px;
@@ -964,6 +966,10 @@ a {
       }
     }
   }
+}
+
+.fantasies-block_mobile {
+  display: none;
 }
 
 .design-projects-block {
@@ -1486,6 +1492,9 @@ a {
 
   .form-block {
     padding-bottom: 35px;
+    .form_mobile {
+      display: none;
+    }
     .form {
       width: 60%;
       margin: 50px auto 0 auto;
@@ -1637,6 +1646,10 @@ a {
       margin-top: 40px;
     }
   }
+}
+
+.contact-info-block_mobile {
+  display: none;
 }
 
 .footer {
